@@ -1,0 +1,17 @@
+# Sample username list for authfinder-ng
+# Usage: authfinder-ng TARGET -i users.txt -p 'Password123'
+# Lines starting with # are ignored
+
+administrator
+admin
+Administrator
+guest
+svc_backup
+svc_sql
+svc_iis
+jsmith
+jdoe
+aadmin
+helpdesk
+support
+sa

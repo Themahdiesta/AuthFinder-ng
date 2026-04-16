@@ -1,0 +1,32 @@
+# authfinder-ng .gitignore
+
+# Reports and output files
+*.md.commands.log
+*_report.md
+*_results.md
+
+# Captured data
+*.kirbi
+*.ccache
+kerberoast*.txt
+asrep*.txt
+bloodhound*.zip
+
+# Temporary files
+/tmp/
+*.tmp
+*.bak
+
+# Cache (user-local, not committed)
+.cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Sensitive data — NEVER commit these
+*.hash
+*.ntds
+ntds.dit*
+SYSTEM.bak
+SAM.bak

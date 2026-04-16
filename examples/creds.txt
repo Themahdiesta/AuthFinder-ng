@@ -1,0 +1,14 @@
+# Sample combined credential file for authfinder-ng
+# Usage: authfinder-ng TARGET -f creds.txt
+# Format: user:password  (one pair per line)
+# NT hashes are auto-detected (32 hex chars after colon)
+
+# Cleartext credentials
+administrator:Password123
+jsmith:Welcome1!
+svc_backup:Backup2024!
+sa:SqlPass123
+
+# Pass-the-hash entries (NT hash format)
+# administrator:aad3b435b51404eeaad3b435b51404ee
+# jsmith:8846f7eaee8fb117ad06bdd830b7586c
