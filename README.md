@@ -37,14 +37,36 @@ Most credential testers assume services run on default ports. In real engagement
 ## Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/authfinder-ng.git
-cd authfinder-ng
+git clone https://github.com/Themahdiesta/AuthFinder-ng.git
+cd AuthFinder-ng
+
+# Install system-wide
 sudo cp authfinder-ng /usr/local/bin/authfinder-ng
 sudo chmod +x /usr/local/bin/authfinder-ng
 
 # Install all dependencies
 authfinder-ng --install-tools
+
+# Add aliases to your shell (zsh + bash)
+cat >> ~/.zshrc << 'EOF'
+
+# ── authfinder-ng ─────────────────────────────────────────────────
+alias authfinder='authfinder-ng'
+alias af='authfinder-ng'
+alias af-check='authfinder-ng --check-tools'
+alias af-install='authfinder-ng --install-tools'
+EOF
+source ~/.zshrc
 ```
+
+**Aliases available after install:**
+
+| Alias | Command |
+|-------|---------|
+| `af` | `authfinder-ng` (short form) |
+| `authfinder` | `authfinder-ng` (long form) |
+| `af-check` | `authfinder-ng --check-tools` |
+| `af-install` | `authfinder-ng --install-tools` |
 
 ### Dependencies
 
